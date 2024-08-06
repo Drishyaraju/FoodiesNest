@@ -28,6 +28,10 @@ a{
     text-decoration: none;
 }
 
+img{
+    object-fit: cover;
+}
+
 .btn{
     border: none;
     outline: none;
@@ -45,11 +49,26 @@ a{
     }
 }
 
+.custom-image{
+    background-color: blueviolet;
+    height: 0;
+    width: 100%;
+    position: relative;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+
 @import "partials/_navbar";
 
 .section{
     display: flex;
     align-items: center;
+    margin-bottom: 3vw;
     .title{
         color: var(--text-color);
         font-size: 3em;
@@ -64,6 +83,23 @@ a{
     }
     .col{
         width: 50%;
+    }
+}
+
+@import "partials/hero-section";
+
+.section.improve-skills{
+    .col.img{
+        img{
+            width: 100%;
+        }
+    }
+    .col.typography{
+        padding-left: 1em;
+        .skill-item{
+            border-left: .5em solid var(--primary-color);
+            
+        }
     }
 }
 
