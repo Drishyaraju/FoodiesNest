@@ -89,31 +89,63 @@ img{
 
 @import "partials/hero-section";
 
-.section.improve-skills{
-    .col.img{
-        img{
-            width: 100%;
-        }
+@import "partials/improve-skills";
+
+@import "partials/quote-section";
+
+.section.chefs{
+    display: block;
+}
+.top-chefs-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    grid-gap: 1.5em;
+    margin-top: .3em;
+}
+.chef-card{
+    display: flex;
+    height: 120px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    overflow: hidden;
+    img{
+        height: 100%;
+        width: 120px;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px var(--shadow-color);
+        object-fit: cover;
+        object-position: top;
     }
-    .col.typography{
+    .chef-card-info{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: .5em;
         padding-left: 1em;
-        .skill-item{
-            border-left: .2em solid var(--primary-color);
-            margin-bottom:.5em ;
-            padding: .1em 0 .1em .5em;
-            color: var(--text-color);
+        .chef-card-name{
+            font-size: 1.5em;
             font-weight: bold;
-            transform: translateX(100%);
-            opacity: 0;
-            animation: getAnimationDuration(.3s) slideInRight forwards;
-            @for $i from 2 through 7{
-                &:nth-child(#{$i}){
-                    animation-delay: #{$i * .1}s;
+            color: var(--text-color);
+        }
+        .chef-recipe-count, .chef-cuisine{
+            font-size: 1.2em;
+            color: var(--text-color);
+        }
+        .chef-icons{
+            font-size: 1.2em;
+            svg{
+                margin-right: .5em;
+                &:nth-child(1){
+                    color: #0063f7;
+                }
+                &:nth-child(2){
+                    color: #13b4ff;
+                }
+                &:nth-child(3){
+                    color: #ff0056;
                 }
             }
-        }
-        .btn{
-            margin-top: .75em;
         }
     }
 }
@@ -135,5 +167,8 @@ img{
         .sidebar-btn{
             display: block;
         }
+    }
+    .chef-card{
+        box-shadow: 0 5px 10px var(--shadow-color);
     }
 }
