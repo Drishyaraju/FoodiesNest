@@ -13,7 +13,7 @@ export default function Footer(){
             <p>29 Food Street </p>
         </div>
         <div className="footer-section">
-            <p className="title">Social Platform</p>
+            <p className="title">Connect</p>
             <p>Facebook</p>
             <p>Twitter</p>
             <p>Instagram</p>
