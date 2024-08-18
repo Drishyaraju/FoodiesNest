@@ -4,64 +4,76 @@ import RecipeCard from "../components/RecipeCard"
 export default function Recipes(){
     const recipes = [
         {
-            title: "Chicken Pan Pizza",
+            title: "Margherita pizza",
             image: "/img/gallery/img_1.jpg",
             authorImg: "/img/top-chef/img_1.jpg",
+            description: "Margherita pizza with mozzarella, cherry tomatoes, basil leaves.",
         }, 
         {
             title: "Spaghetti and Meatballs",
-            image: "/img/gallery/img_4.jpg",
+            image: "/img/gallery/img_12.jpg",
             authorImg: "/img/top-chef/img_2.jpg",
+            description:"Classic Italian dish with spaghetti, meatballs, and marinara sauce.",
         },
         {
-            title: "American Cheese Burger",
+            title: "Burger and Fries",
             image: "/img/gallery/img_5.jpg",
             authorImg: "/img/top-chef/img_3.jpg",
+            description:"Juicy chicken burger with crispy fries and fresh toppings.",
         },
         {
-            title: "Mutton Biriyani",
+            title: "Chicken biryani",
             image: "/img/gallery/img_6.jpg",
             authorImg: "/img/top-chef/img_5.jpg",
+            description:"Aromatic chicken biryani with flavorful spices and basmati rice.",
+        },
+        {
+            title: "Berry Vanilla Sundae",
+            image: "/img/gallery/img_13.jpg",
+            authorImg: "/img/top-chef/img_6.jpg",
+            description:"Creamy vanilla ice cream topped with fresh berries and a crispy waffle.",
         },
         {
             title: "Japanese Sushi",
-            image: "/img/gallery/img_10.jpg",
-            authorImg: "/img/top-chef/img_6.jpg",
-        },
-        {
-            title: "Chicken Pan Pizza",
-            image: "/img/gallery/img_1.jpg",
+            image: "/img/gallery/img_11.jpg",
             authorImg: "/img/top-chef/img_1.jpg",
+            description:"Delicately rolled sushi with seasoned rice, fresh fish, and seaweed.",
         }, 
         {
-            title: "Spaghetti and Meatballs",
-            image: "/img/gallery/img_4.jpg",
+            title: "Fresh Fruit Salad",
+            image: "/img/gallery/img_14.jpg",
             authorImg: "/img/top-chef/img_2.jpg",
+            description:"A mix of berries, strawberries, and grapes in a vibrant fruit salad.",
         },
         {
-            title: "American Cheese Burger",
-            image: "/img/gallery/img_5.jpg",
+            title: "Fluffy Pancake Stack",
+            image: "/img/gallery/img_15.jpg",
             authorImg: "/img/top-chef/img_3.jpg",
+            description:"Pancakes served with a drizzle of maple syrup, fresh berries.",
         },
         {
-            title: "Mutton Biriyani",
-            image: "/img/gallery/img_6.jpg",
+            title: "Glazed Donut Delight",
+            image: "/img/gallery/img_16.jpg",
             authorImg: "/img/top-chef/img_5.jpg",
+            description:"Soft, sweet donuts with a smooth glaze.",
         },
         {
-            title: "Japanese Sushi",
-            image: "/img/gallery/img_10.jpg",
+            title: "Creamy Cookies",
+            image: "/img/gallery/img_17.jpg",
             authorImg: "/img/top-chef/img_6.jpg",
+            description:"Soft, buttery cookies with a smooth, creamy filling.",
         },
         {
-            title: "American Cheese Burger",
-            image: "/img/gallery/img_5.jpg",
+            title: "Creamy White Sauce Pasta",
+            image: "/img/gallery/img_18.jpg",
             authorImg: "/img/top-chef/img_3.jpg",
+            description:"Pasta coated in a creamy white sauce with a hint of garlic & herbs.",
         },
         {
-            title: "Mutton Biriyani",
-            image: "/img/gallery/img_6.jpg",
+            title: "Red Velvet Layer Cake",
+            image: "/img/gallery/img_19.jpg",
             authorImg: "/img/top-chef/img_5.jpg",
+            description:"Rich red velvet layers with creamy frosting; a sweet delight.",
         }
     ].sort(() => Math.random() - 0.5)
 
