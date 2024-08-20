@@ -7,4 +7,4 @@ FoodiesNest is a responsive recipe website where users can explore delicious foo
 
 ## Sneak Peak of FoodiesNest
 
-(./img/readme/img_1.jfif)
+(.public/img/readme/img_1.jfif)
