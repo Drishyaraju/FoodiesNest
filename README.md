@@ -1,4 +1,4 @@
 # FoodiesNest
 
-Project Link: (https://foodies-nest.vercel.app/)
+Demo : https://foodies-nest.vercel.app/
 
